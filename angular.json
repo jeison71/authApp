@@ -13,6 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "allowedCommonJsDependencies": [
+              "lodash"
+            ],
             "outputPath": "dist/auth-app",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "07305d9a-86a6-4f44-b80d-c4d572d7d940"
   }
 }
